@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===================== META & SEO ===================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Indra Surya Adinata — Frontend Developer</title>
+  <meta name="description" content="Indra Surya Adinata is a Frontend Developer specializing in building modern, performant, and accessible web experiences with clean code and thoughtful design." />
+  <meta name="author" content="Indra Surya Adinata" />
+  <meta name="keywords" content="Frontend Developer, Web Developer, JavaScript, HTML, CSS, React, Portfolio" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Indra Surya Adinata — Frontend Developer" />
+  <meta property="og:description" content="Building modern, performant, and accessible web experiences with clean code and thoughtful design." />
+  <meta property="og:url" content="https://indrasurya.dev" />
+  <meta property="og:site_name" content="Indra Surya Adinata Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Indra Surya Adinata — Frontend Developer" />
+  <meta name="twitter:description" content="Building modern, performant, and accessible web experiences." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://indrasurya.dev" />
+
+  <!-- Fonts — Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== CUSTOM CURSOR ===================== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
+
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container">
+      <a href="#hero" class="nav-logo" aria-label="Go to homepage">
+        indra<span>.</span>dev
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main role="main">
+
+    <!-- ============== HERO ============== -->
+    <section class="hero section" id="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, my name is</p>
+
+          <h1 class="hero-name" id="hero-heading">
+            Indra Surya<br />Adinata<span style="color: var(--accent);">.</span>
+          </h1>
+
+          <p class="hero-title">
+            I build things for the <span>web</span>.
+          </p>
+
+          <p class="hero-description">
+            A detail-oriented Frontend Developer passionate about crafting 
+            pixel-perfect interfaces, performant applications, and seamless 
+            user experiences. Currently focused on building accessible, 
+            human-centered digital products.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-cta">
+              View My Work
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============== ABOUT ============== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title" id="about-heading">
+            A glimpse into who I am.
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column — Bio -->
+          <div class="about-text reveal reveal-delay-1">
+            <p>
+              <span class="about-highlight">I'm a Frontend Developer based in Indonesia</span> 
+              with a deep love for clean code, intuitive interfaces, and the 
+              creative intersection of design and engineering. I believe that 
+              great software starts with empathy — understanding the people 
+              who use it.
+            </p>
+            <p>
+              My journey in web development began with a curiosity for how 
+              things work on the internet, and has evolved into a passion for 
+              building products that are not just functional, but delightful. 
+              I focus on writing maintainable, semantic code and creating 
+              experiences that feel effortless.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new design trends, 
+              contributing to open-source projects, or experimenting with 
+              emerging web technologies.
+            </p>
+          </div>
+
+          <!-- Right Column — Skills -->
+          <div class="reveal reveal-delay-2">
+            <h3 class="skills-heading">Tech Stack & Skills</h3>
+
+            <div class="skills-category">
+              <p class="skills-category-label">Languages</p>
+              <div class="skills-list">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">TypeScript</span>
+                <span class="skill-badge">Python</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <p class="skills-category-label">Frameworks & Libraries</p>
+              <div class="skills-list">
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">Next.js</span>
+                <span class="skill-badge">Vue.js</span>
+                <span class="skill-badge">Tailwind CSS</span>
+                <span class="skill-badge">Node.js</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <p class="skills-category-label">Tools & Platforms</p>
+              <div class="skills-list">
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">Figma</span>
+                <span class="skill-badge">VS Code</span>
+                <span class="skill-badge">Vercel</span>
+                <span class="skill-badge">Firebase</span>
+                <span class="skill-badge">REST APIs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============== PROJECTS ============== -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Selected Work</p>
+          <h2 class="section-title" id="projects-heading">
+            Projects I've built.
+          </h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="projects-filter reveal reveal-delay-1" role="group" aria-label="Filter projects by technology">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+          <button class="filter-btn" data-filter="react" id="filter-react">React</button>
+          <button class="filter-btn" data-filter="javascript" id="filter-javascript">JavaScript</button>
+          <button class="filter-btn" data-filter="next.js" id="filter-nextjs">Next.js</button>
+          <button class="filter-btn" data-filter="vue" id="filter-vue">Vue</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" role="list">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal reveal-delay-1" data-tags="react, next.js, typescript" role="listitem">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">📦</span>
+              <div class="project-links">
+                <a href="https://github.com" class="project-link" aria-label="View source code on GitHub" target="_blank" rel="noopener noreferrer">⧉</a>
+                <a href="#" class="project-link" aria-label="View live demo" target="_blank" rel="noopener noreferrer">↗</a>
+              </div>
+            </div>
+            <h3 class="project-title">E-Commerce Dashboard</h3>
+            <p class="project-description">
+              A comprehensive admin dashboard for managing products, orders, 
+              and analytics. Features real-time data visualization, role-based 
+              access control, and a responsive layout optimized for all devices.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Prisma</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal reveal-delay-2" data-tags="javascript, css" role="listitem">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🎨</span>
+              <div class="project-links">
+                <a href="https://github.com" class="project-link" aria-label="View source code on GitHub" target="_blank" rel="noopener noreferrer">⧉</a>
+                <a href="#" class="project-link" aria-label="View live demo" target="_blank" rel="noopener noreferrer">↗</a>
+              </div>
+            </div>
+            <h3 class="project-title">Interactive Design System</h3>
+            <p class="project-description">
+              A modular design system and component library built with vanilla 
+              CSS and JavaScript. Includes tokens, utility classes, and 40+ 
+              accessible UI components documented with live previews.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Web Components</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal reveal-delay-3" data-tags="vue, javascript" role="listitem">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">💬</span>
+              <div class="project-links">
+                <a href="https://github.com" class="project-link" aria-label="View source code on GitHub" target="_blank" rel="noopener noreferrer">⧉</a>
+                <a href="#" class="project-link" aria-label="View live demo" target="_blank" rel="noopener noreferrer">↗</a>
+              </div>
+            </div>
+            <h3 class="project-title">Real-Time Chat Application</h3>
+            <p class="project-description">
+              A performant real-time messaging platform with WebSocket 
+              integration, typing indicators, message reactions, and 
+              end-to-end encryption. Supports group chats and file sharing.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Vue</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Socket.io</span>
+              <span class="project-tag">Node.js</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal reveal-delay-4" data-tags="react, typescript" role="listitem">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">📊</span>
+              <div class="project-links">
+                <a href="https://github.com" class="project-link" aria-label="View source code on GitHub" target="_blank" rel="noopener noreferrer">⧉</a>
+                <a href="#" class="project-link" aria-label="View live demo" target="_blank" rel="noopener noreferrer">↗</a>
+              </div>
+            </div>
+            <h3 class="project-title">Finance Tracker</h3>
+            <p class="project-description">
+              A personal finance management tool with budget tracking, 
+              expense categorization, and interactive charts. Features 
+              recurring transaction support and CSV export functionality.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Chart.js</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal reveal-delay-1" data-tags="next.js, react" role="listitem">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">✍️</span>
+              <div class="project-links">
+                <a href="https://github.com" class="project-link" aria-label="View source code on GitHub" target="_blank" rel="noopener noreferrer">⧉</a>
+                <a href="#" class="project-link" aria-label="View live demo" target="_blank" rel="noopener noreferrer">↗</a>
+              </div>
+            </div>
+            <h3 class="project-title">Developer Blog Platform</h3>
+            <p class="project-description">
+              A statically-generated blog with MDX support, syntax 
+              highlighting, reading time estimates, and full-text search. 
+              Optimized for Core Web Vitals with perfect Lighthouse scores.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">MDX</span>
+              <span class="project-tag">Vercel</span>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal reveal-delay-2" data-tags="javascript" role="listitem">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🌤️</span>
+              <div class="project-links">
+                <a href="https://github.com" class="project-link" aria-label="View source code on GitHub" target="_blank" rel="noopener noreferrer">⧉</a>
+                <a href="#" class="project-link" aria-label="View live demo" target="_blank" rel="noopener noreferrer">↗</a>
+              </div>
+            </div>
+            <h3 class="project-title">Weather Forecast App</h3>
+            <p class="project-description">
+              A sleek weather application using the OpenWeatherMap API. 
+              Features geolocation, 7-day forecasts, animated weather 
+              icons, and a dynamic background that shifts with conditions.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">CSS Animations</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============== CONTACT ============== -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title" id="contact-heading">
+            Let's work together.
+          </h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column — Info & Links -->
+          <div class="contact-info reveal reveal-delay-1">
+            <h3>Have a project in mind?</h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas, 
+              or opportunities to be part of your vision. Feel free to 
+              reach out through the form or connect with me on social platforms.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:hello@indrasurya.dev" class="contact-link-item" aria-label="Send email">
+                <span class="contact-link-icon" aria-hidden="true">✉</span>
+                hello@indrasurya.dev
+              </a>
+              <a href="https://github.com" class="contact-link-item" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <span class="contact-link-icon" aria-hidden="true">⧉</span>
+                GitHub
+              </a>
+              <a href="https://linkedin.com" class="contact-link-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <span class="contact-link-icon" aria-hidden="true">▦</span>
+                LinkedIn
+              </a>
+              <a href="https://twitter.com" class="contact-link-item" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">
+                <span class="contact-link-icon" aria-hidden="true">𝕏</span>
+                Twitter / X
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column — Form -->
+          <div class="reveal reveal-delay-2">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required
+                />
+                <p class="form-error" role="alert">Please enter your name.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+                <p class="form-error" role="alert">Please enter a valid email address.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+                <p class="form-error" role="alert">Please enter a message.</p>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+                Send Message
+                <span class="btn-icon" aria-hidden="true">→</span>
+              </button>
+            </form>
+
+            <!-- Success State -->
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <span class="form-success-icon" aria-hidden="true">✓</span>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. I'll get back to you soon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        © <span id="current-year"></span> Indra Surya Adinata. Built with <span>♥</span> and clean code.
+      </p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
